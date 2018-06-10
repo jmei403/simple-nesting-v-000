@@ -15,8 +15,8 @@ def hopper
           :languages => ["C"]
         }
      }
-	grace = programmer_hash[:grace_hopper]
 
+	grace = programmer_hash[:grace_hopper]
 	grace.each_value do |value|
 		puts value
 	end
@@ -40,6 +40,7 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
+
 	alan = programmer_hash[:alan_kay]
 	alan[:known_for]
 end
@@ -60,6 +61,7 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
+
 	dennis = programmer_hash[:dennis_ritchie]
 	dennis[:languages].join("")
 end
@@ -87,7 +89,8 @@ def adding_matz
         }
      }
 
-
+	programmer_hash[:yukihiro_matsumoto] = {}
+	programmer_hash
 end
 
 def changing_alan
